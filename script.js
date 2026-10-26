@@ -39,7 +39,7 @@ function getDonors() {
 // const donorForm = document.querySelector("#donorForm");
 // const donorMessage = document.querySelector("#donorMessage");
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://blood-connect-7cct.onrender.com/api";
 
 donorForm.addEventListener("submit", async function (event) {
   event.preventDefault();
@@ -129,7 +129,7 @@ searchDonorForm.addEventListener("submit", async function (event) {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/donors?${params.toString()}`
+      `https://blood-connect-7cct.onrender.com/api/donors?${params.toString()}`
     );
 
     const result = await response.json();
